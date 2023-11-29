@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import {typography,dark} from '../../config/theme'
 
 export const LoginPage = styled.div`
   padding: 48px 28px 36px 28px;
   width: 450px;
   border-radius: 6px;
-  background-color: var(--color-dark-bg);
+  background-color: ${dark.background};
   .header {
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@ export const LoginPage = styled.div`
       font-weight: 500;
     }
     p {
-      color: var(--color-text-secondary);
+      color: ${typography.secondary};
       font-size: 14px;
     }
   }
