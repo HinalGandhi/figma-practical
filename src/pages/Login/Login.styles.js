@@ -6,6 +6,10 @@ export const LoginPage = styled.div`
   width: 450px;
   border-radius: 6px;
   background-color: ${dark.background};
+  text-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   .header {
     display: flex;
     align-items: center;
@@ -54,11 +58,36 @@ export const LoginPage = styled.div`
 
 export const LoginBase = styled.div`
   height: 100vh;
-  img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 288px;
-    z-index: -1;
+  .login-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    .logoImg{
+      width:139px;
+      height:29px;
+      position: absolute;
+      top: 20px;
+      left:20px;
+    }
+    .groupImg{
+      width:45vw;
+      height:65vh;
+    }
+    .loginImg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 288px;
+      z-index: -1;
+    }
+    .tree {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 210px;
+      height: 190px;
+     
+    }
   }
 `;
