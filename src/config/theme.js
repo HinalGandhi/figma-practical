@@ -69,7 +69,7 @@ export const misc = {
 
 export const dark = {
   background: '#FFFFFF',
-  other: '#E7E3FC3B',
+  other: '#3A354161',
 };
 
 export const theme = {

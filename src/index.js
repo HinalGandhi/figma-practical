@@ -5,13 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from 'antd';
 import { theme } from './config/theme.js';
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalStyle } from './globals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ConfigProvider theme={theme}>
-      <App />
-    </ConfigProvider>
+    <BrowserRouter>
+      <ConfigProvider theme={theme}>
+        <App />
+        <GlobalStyle/>
+      </ConfigProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

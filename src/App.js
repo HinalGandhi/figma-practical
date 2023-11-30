@@ -1,13 +1,15 @@
-import './App.css';
-import { Login } from './pages/Login/login';
-import { GlobalStyle } from './globals.js';
+import { Route, Routes } from 'react-router-dom';
+import {Login} from "./pages/Login/login";
+import {Register} from "./pages/Register/Register";
+import {NotFound} from "./pages/404/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <Login/>
-      <GlobalStyle />
-    </div>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/404" element={<NotFound />} />
+    </Routes>
   );
 }
 
