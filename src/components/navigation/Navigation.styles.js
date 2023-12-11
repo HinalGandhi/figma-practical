@@ -4,6 +4,7 @@ import { typography,misc } from '../../config/theme';
 export const SidebarBase = styled.nav`
   max-height: 100vh;
   overflow: hidden;
+  color:#3A3541DE;
   .logo {
     display: flex;
     align-items: center;
@@ -30,7 +31,7 @@ export const SidebarBase = styled.nav`
     .ant-radio {
       margin-right: 6.16px;
       &-inner {
-        border-color: white;
+        border-color: #3A3541DE;
         height: 11.67px;
         width: 11.67px;
       }
@@ -55,8 +56,8 @@ export const SidebarBase = styled.nav`
           color: white;
           background: linear-gradient(
             to right,
-            '#c6a7fe',
-            '#9155FD' 
+            #C6A7FE,
+            #9155FD
           );
         }
       }

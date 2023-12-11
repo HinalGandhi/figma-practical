@@ -30,7 +30,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color:  ${misc.background};
     color:${typography.main};
   }
-
   .center {
     display: grid;
     place-content: center;

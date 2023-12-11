@@ -10,7 +10,7 @@ import {
   MdLaptopChromebook,
 } from 'react-icons/md';
 
-import  Expand  from '../Icons/Expand';
+import Expand from '../Icons/Expand';
 import { SidebarBase } from './Navigation.styles';
 import { SidebarSection } from './NavigationSection';
 import { SidebarItem } from './NavigationItem';
@@ -20,7 +20,7 @@ import { ReactComponent as Radio } from '../../assets/icons/radio-checked.svg';
 import { ReactComponent as Home } from '../../assets/icons/home.svg';
 import { ReactComponent as Card } from '../../assets/icons/card.svg';
 import { ReactComponent as User } from '../../assets/icons/user.svg';
-// import { ReactComponent as Invoice } from '../../assets/icons/invoice.svg';
+import { ReactComponent as Invoice } from '../../assets/icons/invoice.svg';
 import { ReactComponent as Arrows } from '../../assets/icons/components.svg';
 import { ReactComponent as Typography } from '../../assets/icons/typography.svg';
 import { ReactComponent as Checked } from '../../assets/icons/checked.svg';
@@ -62,7 +62,7 @@ const Navigation = () => {
               ),
               children: items.map((item) => ({
                 key: item,
-                label: <RadioButton >{item}</RadioButton>,
+                label: <RadioButton color={'#3A3541DE'}>{item}</RadioButton>,
                 className: item === selected ? 'active' : undefined,
                 onClick: () => setSelected(item),
               })),
@@ -70,38 +70,38 @@ const Navigation = () => {
           ]}
         />
         <SidebarSection title="Apps & Pages">
-          <SidebarItem label="Email" icon={<MdOutlineMail size={20} />} />
+          <SidebarItem label="Email" icon={<MdOutlineMail size={20} color={'#3A3541DE'} />} />
           <SidebarItem
             label="Chat"
-            icon={<MdOutlineChatBubbleOutline size={20} />}
+            icon={<MdOutlineChatBubbleOutline size={20} color={'#3A3541DE'} />}
           />
-          <SidebarItem label="Calendar" icon={<MdCalendarToday size={20} />} />
-          {/* <SidebarItem label="Invoice" icon={<Invoice />} expandable /> */}
-          <SidebarItem label="User" icon={<User />} expandable />
+          <SidebarItem label="Calendar" icon={<MdCalendarToday size={20} color={'#3A3541DE'} />} />
+          <SidebarItem label="Invoice" icon={<Invoice />} expandable />
+          <SidebarItem label="User" icon={<User color={'#3A3541DE'} />} expandable />
           <SidebarItem
             label="Roles & Permissions"
-            icon={<MdLockOpen size={20} />}
+            icon={<MdLockOpen size={20} color={'#3A3541DE'} />}
             expandable
           />
-          {/* <SidebarItem label="Pages" icon={<Invoice />} expandable /> */}
+          <SidebarItem label="Pages" icon={<Invoice />} expandable />
           <SidebarItem
             label="Dialog Examples"
-            icon={<MdContentCopy size={20} />}
+            icon={<MdContentCopy size={20} color={'#3A3541DE'} />}
           />
         </SidebarSection>
         <SidebarSection title="user interface">
-          <SidebarItem label="Typography" icon={<Typography />} />
-          <SidebarItem label="Icons" icon={<MdStarBorder size={24} />} />
+          <SidebarItem label="Typography" icon={<Typography color={'#3A3541DE'} />} />
+          <SidebarItem label="Icons" icon={<MdStarBorder size={24} color={'#3A3541DE'} />} />
           <SidebarItem label="Cards" icon={<Card />} expandable />
           <SidebarItem label="Components" icon={<Arrows />} expandable />
         </SidebarSection>
         <SidebarSection title="forms & tables">
-          <SidebarItem label="Form Elements" icon={<Radio />} expandable />
+          <SidebarItem label="Form Elements" icon={<Radio color={'#3A3541DE'} />} expandable />
           <SidebarItem
             label="Form Layouts"
-            icon={<MdLaptopChromebook size={20} />}
+            icon={<MdLaptopChromebook size={20} color={'#3A3541DE'} />}
           />
-          <SidebarItem label="Form Validation" icon={<Checked />} />
+          <SidebarItem label="Form Validation" icon={<Checked color={'#3A3541DE'} />} />
         </SidebarSection>
       </div>
     </SidebarBase>
